@@ -1,0 +1,363 @@
+
+/*******************************ESTILOS GENERALES******************************/
+*{
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+	
+}
+/*******************************ESTILOS HEADER******************************/
+
+form input{
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.nav-item:hover{
+   background:blue;
+   border-radius: 7px;
+}
+
+ /*******************************ESTILOS PAGINA DE INICIO-SERVICIOS******************************/
+ 
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:0;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 20px;
+	
+}
+.item{
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,095);
+    transition: all 300ms;
+    position: relative;
+	border-radius: 15px;
+}
+.item::after{
+    content: "";
+    background: rgba(179,229,252,.1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: scale(0);
+    transition: all 300ms;
+    opacity: 0;
+}
+.item:hover:after{
+  opacity: 1;
+  transform: scale(1);
+}
+.item:hover{
+    transform: scale(1.05);
+}
+.item-text{
+    padding: 1em;
+}
+h3, h5{
+	text-align: center;
+	font-weight: bold;
+}
+.item-img{
+    max-width: 100%;
+    display: block;
+}
+@media(min-width:590px){
+	.containerInicio{
+        grid-template-columns: repeat(2,1fr);
+    }
+	.containerNosotros{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .containerServicios{
+        grid-template-columns: repeat(3,1fr);
+		margin-top:20px;
+    }
+}
+/***********************ESTABLECIENDO EL TAMAÑO DE LA IMAGEN DEL SLIDER*****************************************/
+.carousel-inner{
+	max-height: 39rem;
+}
+
+/****************************ESTILOS DEL ICON WHATSAPP*************************************/
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:20px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+/****************************ESTILOS PARA ICON FACEBOOK***************************/
+.float-2{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:100px;
+	right:40px;
+	background-color:blue;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+
+}
+
+.my-float-2{
+	margin-top:20px;
+}
+.float-2:hover {
+	text-decoration: none;
+	color: blue;
+  background-color:#fff;
+}
+
+/********************************SECCION DEL MAPA *************************/
+
+#local{
+	background: #f3f3f3;
+	padding-bottom: 300px;
+	display: flex;
+	justify-content: center;
+}
+.wrapper{
+	width: 50%;
+	margin-left: 100px;
+	padding-top: 150px;
+}
+ 
+/************************BACKGROUND DE CONTACTO *************************/
+ #bg-contacto{
+	 position: relative;
+	 top: -130px;
+ }
+ #seccion-contacto{
+    background-color: #1b2a4e;
+	min-height: 530px;
+	position: relative;
+ }
+ /************************CONTACTO FORMULARIO *************************/
+#contenedor-formulario{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #fbfafa;
+	border-radius: 8px;
+	max-width: 500px;
+}
+#titulo-formulario{
+	color: #3f3f3f;
+}
+ /************************CONTACTO FORMULARIO *************************/
+
+ footer{
+	 background: #1b2a4e;
+	 min-height: 100px;
+ }
+ footer p{
+	 color: #f3f3f3;
+	 text-align: center;
+ }
+ #iconos{
+	 font-size: 26px;
+	 padding: 0 8px;
+	 color: #f3f3f3;
+ }
+ /*************************************REDES SOCIALES******************************************************/
+  
+/* social */
+.social-body{
+	position:fixed;
+	top:50%;
+	left:0;
+	margin-top:-80px;
+	z-index:999;
+}
+.social-body ul li{
+	display:block;
+}
+.social-body ul li a{
+	font-size:20px;
+	color:#fff;
+	background:#42bc7f;
+	height: 40px;
+    width: 40px;
+	line-height:40px;
+	text-align:center;
+	display:block;
+
+/*
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease; */
+
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;  
+}
+.social-body ul li a:hover{	
+	background: #000;
+   width: 80px;
+   border-radius: 10px;
+}
+.social-body ul li.facebook a{
+	background:#3b5998;
+}
+.social-body  ul li.whatsapp a{
+	background:#25d366;
+}
+.social-body ul li.twitter a{
+	background:#00abf0;
+}
+
+.social-body ul li.correo a {
+	background: #E21B75;
+}
+.social-body ul li.cell a{
+	background:#CB2028;
+}
+ /******************************************************************************************************/
+	
+/************************MEDIA QUERIES PARA PANTALLA ANCHA *********************************************/
+@media(max-width:1200px){
+	#local{
+		flex-wrap: wrap;
+		padding-top: 30px;
+	}
+	.wrapper{
+		width: 90%;
+	}
+
+}
+
+/**********************************************MEDIA QUERIES PARA LAS SECCIONES************************************************************************************/
+@media(min-width:480px){
+
+
+}
+@media(min-width:768px){
+
+}
+@media(min-width:1024px){
+
+}
+/************************MEDIA QUERIES PARA PANTALLA xxl *************************/
+@media(max-width:1400px){
+
+}
+/************************MEDIA QUERIES PARA PANTALLA xl *************************/
+@media(max-width:1200px){
+
+}
+/************************MEDIA QUERIES PARA PANTALLA lg *************************/
+@media(max-width:992px){
+.social-body{
+	position:fixed;
+	top:50%;
+	left:0;
+	margin-top:-80px;
+	z-index:999;
+	margin-left: 830px;
+}
+.float{
+	right:10px ;
+	}
+}
+
+/************************MEDIA QUERIES PARA PANTALLA MD /medium*************************/
+   @media(max-width:768px){
+	   #intro,#equipo{
+		   width: 90% !important;
+	   }
+	   #equipo p{
+		   display: none;
+	   }
+	   .servicio-fila{
+		   width: 100% !important;
+		   text-align: center;
+	   }
+	   #bg-contacto{
+		top: -110px;
+	}
+	.float, .float-2{
+	display: none;
+	}
+	.social-body{
+		position:fixed;
+		top:50%;
+		left:0;
+		margin-top:-80px;
+		z-index:999;
+		margin-left: 650px;
+	}
+
+   }
+/************************MEDIA QUERIES PARA PANTALLA EXTRA X-SMALL *************************/
+@media(max-width:576px){
+   .icono-wrap{
+	   flex-wrap: wrap;
+	   justify-content: center !important;
+   }
+  
+   .imgContacto, .imgDomicilio, .imgSolucion, .imgCertifica{
+	width: 100%;
+	height: 100%;
+   }
+  
+   .inicio-contacto{
+	   display: none;
+   }
+   header >p{
+	   display: none;
+   }
+   .social-body{
+	position:fixed;
+	top:50%;
+	left:0;
+	margin-top:-80px;
+	z-index:999;
+	margin-left: 370px;
+}
+}
+/*******************************ESTILOS COOKIES******************************/
+#div-cookies {
+	position: fixed;
+	bottom: 20px;
+	left: 0px;
+	width: 100%;
+	height: 100px;
+	background: rgba(0,0, 0, 0.8);
+	color: white;
+	box-shadow: 0px -5px 15px gray;
+	padding: 15px;
+	text-align: center;
+	font-size:1.1em;
+	z-index: 99;
+}

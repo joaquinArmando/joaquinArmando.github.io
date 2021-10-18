@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+        <!--********************************ENCABEZADO DE LA PAGINA****************************************-->
+        <header class="container-fluid bg-secondary d-flex justify-content-end align-items-center">
+            <p class="text-light mb-0 p-2 fs-7">
+              
+               <a href="tel:+529515164283" style="text-decoration: none; color: white;"> <img  src="img/telefono.svg" alt="" width="30" height="25"> 9515164283</a>  
+               </p>
+            <p class="text-light mb-0 p-2 fs-7"> <a href="mailto:contacto@spectraoax.com "  style="text-decoration: none; color: white;"> <img src="img/gmail.png" width="30" alt="">  contacto@oax.com</a> 
+           </p>
+            <a href="https://www.google.com/maps?q=AV.+MORELOS+130" class="text-light text-decoration-none fs-7"><img src="img/mapa2.png" alt="" width="30" height="25"> Av.morelos 1308</a>
+            
+        </header>
+    <!--****************************BARRA DE NAVEGACION************************************-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3" id="menu" >
+           <div class="container-fluid ">
+               <a href="#" class="navbar-brand white"> <img class="rounded" src="img/spectra.jpg" width="200" height="70"></a>
+               <!--BOTON PARA EL MENU MOVIL-->
+                    <button 
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu"
+                    aria-controls="menu"
+                    aria-expanded="false"
+                    aria-label="Mostrar/ocultar Menu"
+                    >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+               <!-- MENU DE NAVEGACION-->
+               <div class="collapse navbar-collapse" id="menu">
+                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                         <li class="nav-item"><a href="INICIO.html" class="nav-link">Inicio</a></li>
+                         <li class="nav-item"><a href="nosotros.html" class="nav-link">acerca de nosotros</a></li>
+                         <li class="nav-item"><a href="servicios.html" class="nav-link">servicios</a></li>
+                         <li class="nav-item"><a href="contacto.html" class="nav-link">contactenos</a></li>
+                     </ul>
+    
+    
+                        <form class="d-flex">
+                            <input type="search" action="form-control me-2" placeholder="Buscar Producto" aria-label="Buscar">
+                            <button  class="btn btn-outline-light" type="button">Buscar</button>
+                        </form>
+    
+                </div>
+           </div>
+    </nav>
+    <!--**************************************REDES SOCIALES ********************************************************-->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+     <a href="https://api.whatsapp.com/send?phone=529581319787&text=Hola Spectra a sus ordenes en que podemos ayudarle?" class="float" target="_blank">
+     <i class="fa fa-whatsapp my-float"></i>
+     </a>
+    <!--     
+     <a href="https://m.me/https://www.facebook.com/spectra.oaxaca" class="float-2" target="_blank">
+     <i class="fa fa-facebook my-float-2" aria-hidden="true" ></i>
+    </a>  -->
+    
+    <!--*************************************** BANNER************************************************************************--> 
+  
+        <img  class="img-fluid" src="img/contacto1.jpg" alt="">
+ 
+
+    <!--***************************************BACKGROUND DEL FORMULARIO************************************************************************--> 
+  <section id="seccion-contacto" class="border-bottom border-secondary border-2">
+    <div id="bg-contacto">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                 <path fill="#483D8B" fill-opacity="0.8" 
+                         d="M0,160L30,165.3C60,171,120,181,180,197.3C240,213,300,235,360,218.7C420,203,480,149,540,117.3C600,85,660,75,720,80C780,85,840,107,900,106.7C960,107,1020,85,1080,80C1140,75,1200,85,1260,74.7C1320,64,1380,32,1410,16L1440,0L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+                 </path>
+          </svg>
+    </div>
+<!--*************************************** FORMULARIO************************************************************************--> 
+       <div class="container" id="contenedor-formulario">
+           <div id="titulo-formulario" class="text-center mb-4">
+               <div>
+                   <img src="img/support.png" alt="contacto" class="img-fluid">
+                  </div>
+               <h2>contactanos</h2>
+               <p class="fs-5">Estamos aqui para solucionar tus problemas</p>
+               
+               <form action="enviar.php" method="post">
+                         <div class="mb-3">
+                           
+                            <input type="email" 
+                            class="form-control" 
+                            id="email" 
+                            placeholder="nombre@ejemplo.com"  required>
+
+                        </div>
+                        <div class="mb-3">
+                           
+                          <input type="text" 
+                          class="form-control" 
+                          id="nombre" 
+                          placeholder="Nombre"  required>
+
+                      </div>
+                      <div class="mb-3">
+                           
+                          <input type="tel" 
+                          class="form-control" 
+                          id="tel" 
+                          placeholder="000-000-000"  required>
+
+                      </div>
+                        <div class="mb-3"> 
+                           <textarea class="form-control" 
+                           id="textarea"
+                            rows="3" placeholder="Escribe tu mensaje">
+                          </textarea>
+                        </div>
+                     <div class="mb-3">
+                         <button type="submit" class="btn btn-primary w-100 fs-5">Enviar mensaje</button>
+                     </div>
+              </form>
+           </div>
+       </div>
+</section>
+
+<!--*************************************** SECCION DEL MAPA************************************************************************--> 
+
+<section class="mapa-fluid bg-secondary ">
+    <iframe  width="1349" height="494" frameborder="0" 
+            scrolling="no" marginheight="0" marginwidth="0"
+            id="gmap_canvas" 
+            src="https://maps.google.com/maps?width=900&amp;height=494&amp;hl=en&amp;q=avenida%20morelos%201308%20Oaxaca%20City+(mapa)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+    </iframe> 
+     <a href='https://www.symptoma.es/es/info/covid-19'>g </a> 
+     <script type='text/javascript' 
+     src='https://embedmaps.com/google-maps-authorization/script.js?id=1f73f0c1ff29081264e463f2d8d51937932fd98f'>
+</script>
+</section>
+<!--******************************************REDES SOCIALES*********************************************************************--> 
+<div class="social-body">
+    <ul>
+        <li class="facebook"><a href="https://www.facebook.com/spectra.oaxaca" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=529581319787&text=Hola Spectra a sus ordenes en que podemos ayudarle?" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+        <li class="twitter"><a href="https://twitter.com/SPECTRAOAX" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li class="correo"><a href="mailto:contacto@spectraoax.com" target="_blank"> <i class="fa fa-envelope"></i> </a></li>
+        <li class="cell"><a href="tel:+529515164283" target="_blank"> <i class="fa fa-phone"></i> </a></li>
+    </ul>
+</div>
+
+<!--*************************************** FOOTER************************************************************************--> 
+<footer class="w-100 d-flex align-items-center justify-content-center flex-wrap">
+ <p>AV MORELOS 1308 , OAXACA DE JUÁREZ, OA 68000, mx | 52-951-5164283 | contacto@spectraoax.com</p>
+</footer>
+<!--***************************************************************************************************************--> 
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <script src="js/main.js"></script>
+
+
+</body>
+</html>

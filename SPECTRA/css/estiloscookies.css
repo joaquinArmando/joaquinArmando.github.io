@@ -1,0 +1,93 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #f2f2f2;
+	font-family: 'Roboto', sans-serif;
+}
+
+p {
+	margin-bottom: 20px;
+	line-height: 150%;
+}
+
+main {
+	margin: 20px auto;
+	max-width: 1000px;
+	background: #fff;
+	min-height: 80vh;
+	padding: 20px;
+	border-radius: 10px;
+}
+.avisoCookies{
+	display: none;
+	background: #fff;
+	padding: 20px;
+	width: calc(100% - 40px);
+	max-width: 300px;
+	line-height: 150%;
+	border-radius: 10px;
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	z-index: 1000;
+	padding-top: 60px;
+	box-shadow: 0px 2px 20px 10px rgba(222,222,222, .25);
+	text-align: center;
+}
+.avisoCookies.activo{
+	display: block;
+}
+.avisoCookies .galleta{
+	max-width: 100px;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+.avisoCookies .titulo,
+.avisoCookies .parrafo{
+	margin-bottom: 15px;
+}
+.avisoCookies .boton{
+	width: 100%;
+	background: #595959;
+	border: none;
+	color: #fff;
+	font-family: 'Roboto',sans-serif;
+	text-align: center;
+	padding: 15px 20px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+.avisoCookies .boton:hover{
+   background: #000;
+}
+.avisoCookies .enlace{
+	color: #4DBFFF;
+	text-decoration: none;
+	font-size: 14px;
+}
+.avisoCookies .enlace:hover{	
+	text-decoration: underline;	
+}
+.fondo-aviso-cookie{
+	display:none;
+	background: rgba(0,0,0,.20);
+	position: fixed;
+	z-index: 99;
+	width: 100vw;
+	height: 100vh;
+	top: 0%;
+	left: 0%;
+}
+
+.fondo-aviso-cookie.activo{
+	display: block;
+}
